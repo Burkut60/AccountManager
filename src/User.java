@@ -1,7 +1,6 @@
 
 public class User {
 
-
     private String email;
 
     private String fullName;
@@ -13,8 +12,6 @@ public class User {
         this.fullName = fullName;
         this.phoneNumber = phoneNumber;
     }
-
-
 
     public String getEmail() {
         return email;

@@ -18,7 +18,7 @@ public abstract class AccountManager {
     /**
      * Удаляет пользователя из базы данных.
      * @param email Почта пользователя, по которому необходимо удалить из базы данных
-     * @return Возвращает {@link ResultWithReason}, в котором содержится информация об удалении пользователя в
+     * @return Возвращает {@link ResultWithEmail}, в котором содержится информация об удалении пользователя в
      * базе данных {@link UserProvider}
      */
     abstract ResultWithReason delete(String email);
@@ -57,7 +57,7 @@ abstract class UserProviderr {
 /**
  * Абстрактный класс, который может содержать в себе необходимые знания об результате операци
  */
-abstract class ResultWithReasonn {
+abstract class ResultWithReason {
 
     /**
      * Возвращает результат операции
@@ -71,14 +71,14 @@ abstract class ResultWithReasonn {
      * @return Возвращает причину, по которой она была не выполнена
      * Дополнительно: а если она будет выполнена успешно, то может вернуть какую-нибудь успешную причину?
      */
-    abstract Reason getReason();
+    abstract String getReason();
 }
 
 /**
  * Абстрактный класс, от которого могут быть реализованы необходимые причины с переопределенным текстом
  * самой причины
  */
-abstract class Reasonn {
+abstract class Reason {
     /**
      * Возвращает текст причины
      * @return текст
