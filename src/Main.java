@@ -30,8 +30,7 @@ public class Main {
                 manager.create(email, fullName, phoneNumber);
                 scan();
 
-
-            case 2:
+                case 2:
                 Scanner scanner2 = new Scanner(System.in);
                 System.out.println("Введите email пользователя которого нужно удалить ");
                 String emailDel = scanner2.nextLine();

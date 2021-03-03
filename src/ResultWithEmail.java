@@ -3,7 +3,7 @@ public class ResultWithEmail extends ResultWithReason {
 
     @Override
     boolean getResult() {
-        System.out.println("ok");
+        System.out.println("Email ok");
         return true;
     }
 

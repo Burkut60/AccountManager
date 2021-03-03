@@ -2,7 +2,7 @@
 public class ResultWithDelete extends ResultWithReason {
     @Override
     boolean getResult() {
-        System.out.println("Ok");
+        System.out.println("Delete Ok");
         return true;
     }
 
