@@ -2,9 +2,7 @@
 public class User {
 
     private String email;
-
     private String fullName;
-
     private String phoneNumber;
 
     public User(String email, String fullName,String  phoneNumber){

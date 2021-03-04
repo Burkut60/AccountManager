@@ -37,14 +37,14 @@ abstract class UserProviderr {
      * @param user Пользователь, которого нам необходимо занести в базу данных
      * @return Возвращает true, если нам удалось успешно добавить пользователя в базу данных, иначе false
      */
-    abstract boolean createUser(User user);
+    abstract void createUser(User user);
 
     /**
      * Удалят пользователя с базы данных
      * @param email почта пользователя, которого мы должны удалить
      * @return Возвращает true, если нам удалось успешно удалить пользователя, иначе false
      */
-    abstract boolean deleteUser(String email);
+    abstract void deleteUser(String email);
     /**
      * Данный метод проверяет, если ли пользователь с таким email в нашей базе данных
      * @param email Почта клиента
